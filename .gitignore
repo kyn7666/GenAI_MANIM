@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+
+# Virtual environment
+venv/
+venv_worker/
+.env
+.env.local
+
+# macOS system files
+.DS_Store
+._.DS_Store
+**/.DS_Store
+**/._.DS_Store
+
+# VSCode settings
+.vscode/
+.idea/
+
+# Compiled output or cache
+*.egg-info/
+dist/
+build/
+
+# Media outputs (optional)
+media/videos/
