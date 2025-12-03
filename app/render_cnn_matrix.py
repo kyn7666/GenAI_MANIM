@@ -24,6 +24,7 @@ def render_cnn_matrix(cfg: dict, out_basename="cnn_param_demo", fmt="mp4") -> st
     scene_template = r"""
 from manim import *
 import random, json
+import numpy as np
 
 class CNNParamScene(Scene):
     def construct(self):
@@ -224,7 +225,7 @@ class CNNParamScene(Scene):
             if (i, j) in fmap_text_objects:
                 self.remove(fmap_text_objects[(i, j)])
 
-            self.play(FadeIn(neg_txt, run_time=0.2))
+            self.play(FadeIn(neg_txt), run_time=0.2)
             self.play(Transform(neg_txt, zero_txt), run_time=0.3)
             relu_vals[i][j] = 0
 
